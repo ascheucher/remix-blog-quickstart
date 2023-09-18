@@ -28,8 +28,6 @@ export const loader = async ({ params }: LoaderArgs) => {
 
 export const action = async ({ request }: ActionArgs) => {
 
-  const oldSlug = request.params.slug
-
   const formData = await request.formData();
 
   const title = formData.get("title");
